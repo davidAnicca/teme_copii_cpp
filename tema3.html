@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>CPP Tema 3</title>
+<link rel="icon" href="icon.ico">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<a href="index.html">&lt&lt Home</a>
+<p>Înainte de a face tema, consultați <a href="./t3img/CppLectia3.pdf">lecția</a> pentru inspirație.</p>
+<hr>
+<h1>Tema A</h1>
+<ul>
+    <li>
+    
+    Lui David îi plac sumele mari de bani. Pentru David o sumă mare de bani este orice <strong>depășește 100</strong> de lei.
+    
+    Pe lângă asta, David vrea să aibă doar sume rotunde. O sumă rotundă <strong>se termină tot timpul cu cifra 0</strong>.
+    
+    </li>
+    <li>
+    Obs. <strong><em>Orice număr care se termină cu 0 este divizibil cu 10, adică restul împărțirii la 10 este 0 (n % 10 == 0)</em></strong>
+    </li>
+    <br>
+    <li>Creați un program care citește de la tastatură o sumă de bani (număr natural) și determină dacă această sumă este pe placul lui David, afișând un mesaj corespunzător.</li>
+    <br>
+    <li>Exemplu: <em>10 -> NU (este sub 100 de lei)</em></li>
+    <li>Exemplu: <em>564 -> NU (nu este sumă rotundă)</em></li>
+    <li>Exemplu: <em>1000 -> DA</em></li>
+</ul>
+<hr>
+<h1>Tema B</h1>
+<ul>
+    <li>
+    Un triunghi se poate defini prin 3 laturi <em><strong>a</strong></em>, <em><strong>b</strong></em> și <em><strong>c</strong></em>, prin care sunt notate de fapt lungimile acestora.
+    </li>
+    <li>Spunem că un triunghi este <strong>dreptunghic</strong> dacă acesta are un unghi de 90°.</li>
+
+<br>
+<li>Un unghi de 90° arată cam așa:</li>
+</ul>
+<div class="i">
+<img src="./t3img/90.png" width="500">
+</div>
+<br>
+<ul>
+    <li>
+    Orice triunghi dreptunghic respectă <strong>Teorema lui Pitagora</strong>, ilustrată mai jos:
+    </li>
+</ul>
+<div class="i">
+<img src="./t3img/t.png" width="500">
+</div>
+<br>
+<ul>
+    <li>Teorema ne spune că </strong>a*a + b*b = c*c</strong>, adică pătratul laturii mari este egal cu suma pătratelor celorlalte laturi.</li>
+    <li>Pătratul unui număr înseamnă numărul înmulțit cu el însuși odată. De exemplu, pătratul lui 3 este 3*3 adică 9.</li>
+<br>
+    <li>
+    Creați o aplicație tip consolă care citește 3 numere naturale <em><strong>a</strong></em>, <em><strong>b</strong></em> și <em><strong>c</strong></em> și verifică dacă acestea pot reprezenta laturile unui triunghi dreptunghic afișând un mesaj corespunzător.
+    </li>
+    <li>
+    <strong>Atenție!</strong> Numerele pot fi date în orice ordine, de exemplu tripletele (3, 4, 5), (4, 5, 3), (5, 3, 4), (5, 4, 3), (3, 5, 4) sunt toate laturile aceluiași triunghi dreptunghic. 
+    </li>
+    <li>Pentru a putea determina dacă un triplet (a, b, c) este valid trebuie verificat dacă <strong>oricare</strong> din următoarele condiții este adevărată:
+        <ul>
+        <li><strong>a*a + b*b = c*c</strong></li>
+        <li><strong>c*c + b*b = a*a</strong></li>
+        <li><strong>a*a + c*c = b*b</strong></li>
+        </ul><br></li>
+        <li>
+        Dacă niciuna din condiții nu este satisfăcută, atunci tripletul nu este valid.
+    </li>
+    <br>
+    <li>Folosiți operatorul logic <em>|| (or)</em> pentru a verifica toate cele 3 condiții <strong>într-un singur</strong> <em>if statement</em>
+    <br>
+    <li>Exemplu: <em>a=3, b=4, c=5 -> DA, deoarece 5*5 = 4*4 + 3*3</em></li>
+    <li>Exemplu: <em>a=4, b=5, c=3 -> DA, deoarece 5*5 = 4*4 + 3*3</em></li>
+    <li>Exemplu: <em>a=20, b=99, c=101 -> DA, deoarece 101*101 = 99*99 + 20*20</em></li>
+    <li>Exemplu: <em>a=2, b=3, c=4 -> NU, deoarece 4*4 != 2*2 + 3*3 (16 != 4 + 9)</em></li>
+    <br>
+    <li>Pentru a putea verifica, mai jos se află câteva triplete valide:<br>
+        <ul>
+        <li>(3, 4, 5)<br>        </li>
+        <li>(5, 12, 13)<br>      </li>
+        <li>(8, 15, 17)<br>      </li>
+        <li>(7, 24, 25)<br>      </li>
+        <li>(20, 21, 29)<br>     </li>
+        <li>(12, 35, 37)<br>     </li>
+        <li>(9, 40, 41)<br>      </li>
+        <li>(28, 45, 53)<br>     </li>
+        <li>(11, 60, 61)<br>     </li>
+        <li>(16, 63, 65)<br>     </li>
+        <li>(33, 56, 65)<br>     </li>
+        <li>(48, 55, 73)<br>     </li>
+        <li>(13, 84, 85)<br>     </li>
+        <li>(36, 77, 85)<br>     </li>
+        <li>(39, 80, 89)<br>     </li>
+        <li>(65, 72, 97)<br>     </li>
+        <li>(119, 120, 169)<br>  </li>
+        <li>(52, 165, 173)<br>   </li>
+        <li>(19, 180, 181)<br>   </li>
+        <li>(57, 176, 185)<br>   </li>
+        <li>(104, 153, 185)<br>  </li>
+        </ul>
+    </li>
+    </ul>
+<hr>
+<p>Timp de lucru: 1 săptămână</p>
+<a href="compiler.html">Compilator online</a><br>
+<a href="">Video cu lecția</a>
+
+</body>
+
+
+
+
+</html>
