@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>CPP Tema 1</title>
+<link rel="icon" href="../icon.ico">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../h/styles/github-dark.min.css">
+<script src="../h/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <a href="../index.html">&lt&lt Home</a>
+    <hr>
+    <h2>Ce este o variabilă</h2>
+    <p>În programare folosim variabile pentru a putea reține anumite valori (informații) pe parcursul execuției unui program.</p>
+    <p>Exemplu:<p>
+
+    <pre>
+            <code>
+            variabila scor reține un număr.
+            la început scor <- 0
+    
+            dacă câștig atunci:
+                scor <- scor + 1 (scorul crește cu 1)
+            
+            dacă pierd atunci:
+                scor <- scor - 1 (scorul scade cu 1)
+            </code>
+    </pre>
+    <hr>
+    <h2>Tipuri de variabile uzuale în c++</h2>
+    <div class="tabel">
+    <table BORDER="1">
+    <tr VALIGN="TOP">
+        <td><STRONG>Tip de variabilă</STRONG></td>
+        <td><STRONG>Exemplu de valoare</STRONG></td>
+        <td><STRONG>Semnificație</STRONG></td>
+    </tr>
+    <tr VALIGN="TOP">
+        <td>int</td>
+        <td>7<br>8<br>10<br>-2</td>
+        <td>Numere întregi (fără virgulă)</td>
+    </tr>
+    <tr VALIGN="TOP">
+        <td>string</td>
+        <td>
+            #include &lt;string&gt;<br>
+            "Ana are mere"<br>"F"<br>"-1"<br>"10.00"
+        </td>
+        <td>Șiruri de caractere (text de orice fel)</td>
+    </tr>
+    <tr VALIGN="TOP">
+        <td>float</td>
+        <td>7.87<br>8.0<br>10.21<br>-2.32</td>
+        <td>Numere cu virgulă (precizie limitată)</td>
+    </tr>
+    <tr VALIGN="TOP">
+        <td>double</td>
+        <td>5.999999</td>
+        <td>Numere cu virgulă (precizie crescută)</td>
+    </tr>
+    <tr VALIGN="TOP">
+        <td>bool</td>
+        <td>true  (1)<br>
+            false (0)
+        </td>
+        <td>Valoare de adevăr (DA sau NU)</td>
+    </tr>
+    <tr VALIGN="TOP">
+        <td>long</td>
+        <td>922337203685477580</td>
+        <td>Numere întregi foarte mari</td>
+    </tr>
+    <tr VALIGN="TOP">
+        <td>auto</td>
+        <td>oricare de mai sus</td>
+        <td>Detectează automat tipul de variabilă după atribuirea acesteia.</td>
+    </tr>
+    </table>
+    </div>
+    
+    <hr>
+    <h2>Operații cu variabile</h2>
+    <div class="tabel">
+    <table BORDER="1">
+    <tr VALIGN="TOP">
+        <td><STRONG>Operația</STRONG></td>
+        <td><STRONG>Sintaxa</STRONG></td>
+        <td><STRONG>Exemple</STRONG></td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>Declarare</td>
+        <td>tip nume_variabila;</td>
+        <td>string nume;<br>
+                               int nr;<br>
+                               bool e_frig;<br>
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>Atribuire</td>
+        <td>nume_var = valoare;</td>
+        <td>nume = “Ana”;<br>
+                               nr = 5; <br>
+                               e_frig = true; <br>
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>Declarare + Atribuire</td>
+        <td>tip nume_var = valoare;</td>
+        <td>
+            string nume = “Maria”; <br>
+            int nr = 5; <br>
+            bool e_frig = false; <br>
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>Extragere prin afișare(Consultare)</td>
+        <td>cout &lt;&lt; nume_var &lt;&lt; ...</td>
+        <td>
+            cout &lt;&lt; nume &lt;&lt; endl;<br>
+            cout &lt;&lt; nr;<br>
+            cout &lt;&lt; e_frig &lt;&lt; endl;<br>
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>Extragere prin atribuire</td>
+        <td>var_a = var_b;</td>
+        <td>
+            nume = “Ana”;  <br>
+            alt_nume = nume;  <br>
+            nr = nr+1;   <br>
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>Incrementare</td>
+        <td>
+            var++;<br>
+            ++var;<br>
+            var = var+1;<br>
+
+        </td>
+        <td>
+            nr++;<br>
+            ++nr;<br>
+            nr = nr+1;<br>
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>Decrementare</td>
+        <td>
+            var--;<br>
+            --var;<br>
+            var = var-1;<br>
+
+        </td>
+        <td>
+            nr--;<br>
+            --nr;<br>
+            nr = nr-1;<br>
+        </td>
+    </tr>
+    </table>
+    </div>
+    
+    <hr>
+    <h2>Operatori</h2>
+    <div class="tabel">
+    <table BORDER="1">
+    <tr VALIGN="TOP">
+        <td><STRONG>Operator</STRONG></td>
+        <td><STRONG>Sintaxa</STRONG></td>
+        <td><STRONG>Exemple</STRONG></td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>+</td>
+        <td>var = a + b;</td>
+        <td>int var;        <br>
+            int a = 4;      <br>
+            int b = 2;      <br>
+            var = a + b;    <br>
+            //var == 6
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>-</td>
+        <td>var = a - b;</td>
+        <td>int var;        <br>
+            int a = 4;      <br>
+            int b = 2;      <br>
+            var = a - b;    <br>
+            //var == 4
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>*</td>
+        <td>var = a * b;</td>
+        <td>int var;        <br>
+            int a = 4;      <br>
+            int b = 2;      <br>
+            var = a * b;    <br>
+            //var == 8
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>/</td>
+        <td>var = a / b;</td>
+        <td>int var;        <br>
+            int a = 4;      <br>
+            int b = 2;      <br>
+            var = a / b;    <br>
+            //var == 2
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>% <br>(modulo - restul împărțiri)</td>
+        <td>var = a % b;</td>
+        <td>int var;        <br>
+            int a = 4;      <br>
+            int b = 2;      <br>
+            int c = 3;      <br>
+            var = a % b; //(4%2)<br>
+            //var == 0 4 la 2 se imparte exact<br>
+            var = c % a; //(3%2)<br>
+            //var == 1
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>== <br>(egal)</td>
+        <td>a == b //bool</td>
+        <td>int a = 5;          <br>
+            int b = 2;          <br>
+            var = a == b;       <br>
+            //var == false
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>!= <br>(diferit)</td>
+        <td>a == b //bool</td>
+        <td>int a = 5;          <br>
+            int b = 2;          <br>
+            var = a == b;       <br>
+            //var == true
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>&lt; / &gt; <br>(mai mic / mai mare)</td>
+        <td>a &lt; b//bool <br> a &gt; b</td>
+        <td>int a = 5;           <br>
+            int b = 2;           <br>
+            var1 = a &gt; b;     <br>
+            //var1 == true       <br>
+            var2 = a &lt; b;     <br>
+            //var == false
+        </td>
+    </tr>
+   
+    <tr VALIGN="TOP">
+        <td>&lt;= / &gt;= <br>(mai mic sau egal / mai mare sau egal)</td>
+        <td>a &lt;= b//bool <br> a &gt;= b</td>
+        <td>int a = 5;            <br>
+            int b = 2;            <br>
+            var1 = a &gt;= b;     <br>
+            //var1 == true        <br>
+            var2 = a &lt;= b;     <br>
+            //var == false
+        </td>
+    </tr>
+    
+    <tr VALIGN="TOP">
+        <td>! <br>(not)</td>
+        <td>
+            !var //(bool)
+            <br>//var: bool
+        </td>
+        <td>var = true;        <br>
+            var2 = !var;       <br>
+            //var2 == false
+        </td>
+    </tr>
+   
+    </table>
+    </div>
+
+    <hr>
+    <h2>Aplicații</h2>
+    
+    <ol>
+        <li>SDPI</li>
+        <ul>
+            <li>Se cere determinarea sumei a două numere naturale citite de la tastatură.</li>
+            <li>Exersare individual pentru <strong>diferență</strong>, <strong>produs</strong> și <strong>împărțire</strong> întreagă</li>
+        </ul>
+        
+        <pre>
+            <code class="c++">
+            #include &lt;iostream&gt;
+            using namespace std;
+            
+            int main()
+            {
+                int numar1;
+                int numar2;
+                cout << "dati primul numar" << endl << ">>";
+                cin >> numar1;
+                cout << "dati al doilea numar" << endl << ">>";
+                cin >> numar2;
+            
+                int suma = numar1 + numar2;
+                int diferenta = numar1 - numar2;
+                int produs = numar1 * numar2;
+                int impartire = numar1 / numar2;
+            
+                cout << "suma: " << suma << endl;
+                cout << "diferenta: " << diferenta << endl;
+                cout << "produsul: " << produs << endl;
+                cout << "catul: " << impartire << endl;
+                return 0;
+            }
+            </code>
+        </pre>
+        
+        </ul>
+        
+        <li>Structura de decizie</li>
+        
+        <ul>
+           <li>În programare folosim structuri de decizie pentru a putea determina felul în care problema se rezolvă.</li>
+           <li>Anumite probleme se rezolvă diferit în funcție de datele conținute în variabile.</li>
+           
+           <p><em>Exemplu:</em></p>
+           <p><em>Pentru a putea intra pe Facebook este nevoie de o parolă. Programul de la login verifică dacă parola introdusă este egală cu parola salvată în bazele de date Facebook.</em></p>
+        </ul>
+        
+        <pre>
+            <code class="c++">
+            //undeva în program:
+
+            string email_citire;
+            string parola_citire;
+        
+            cout << "email>>";
+            cin >> email_citire;
+            cout << "parola>>";
+            cin >> parola_citire;
+        
+            //se preia parola din baza de date:
+            string parola_corecta = Database().parola(email_citire);
+            
+        //dacă parola este aceeași cu cea corectă:
+            if(parola_citire == parola_corecta){        
+                cout << "Parola corecta!" << endl;
+        //altfel (dacă ea este diferită de cea corectă):
+            }else{
+                cout << "Parola gresita!" << endl;
+            }
+            </code>
+        </pre>
+    
+    <li>Par sau impar?</li>
+    <ul>
+    
+    
+        <li>Exemplul de ora trecută verifica dacă un număr este par sau impar.   </li>
+        <li>Un număr este par dacă restul împărțirii la 2 este 0.                </li>
+        <li>Dacă restul împărțirii la 2 este 1, numărul este impar.              </li>
+        <p>Exemplu:</p>
+        <pre>
+            <code class="c++">
+                5 : 2 = 2 r 1  			5 este impar
+                4
+                1
+                
+                4 : 2 = 2 r 0			4 este par
+                4
+                0
+            </code>
+        </pre>
+        
+        <pre>
+            <code class="c++">
+                #include &lt;iostream&gt;
+                using namespace std;
+                int main()
+                {
+                    cout << "introdu orice numar>>";
+                    int nr;
+                    cin >> nr;
+                    
+                    if ( nr % 2 == 0){
+                        cout << nr << " este par!";
+                    }else{
+                        cout << nr << " este impar!";
+                    }
+                    return 0;
+                }
+            </code>
+        </pre>
+        
+        <li>Ramura <strong>else</strong> este opțională.                                               </li>
+        <li>Se poate introduce și ramura <strong>else if</strong> astfel                               </li>
+        <li>Mai multe despre compunerea structurilor discutăm în următoarea lecție.   </li>
+
+        <pre>
+            <code class="c++">
+                if (conditie1){
+                    //conditie1 == true
+                }else if(conditie2){
+                    //conditie1 == false
+                    //conditie2 == true
+                }else if(conditie3){
+                    //conditie1 == false
+                    //conditie2 == false
+                    //conditie3 == true
+                }else{
+                    //conditie1 == false
+                    //conditie2 == false
+                    //conditie3 == false
+                }
+            </code>
+        </pre>
+        
+    </ul>
+    </ol>
+    
+
+
+
+</body>
+
+</html>

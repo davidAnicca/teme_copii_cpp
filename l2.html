@@ -1,0 +1,1451 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Cousine;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>Ce este o variabilă?</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Cousine",serif'>în programare folosim variabile pentru a
+putea re</span>ține anumite valori (informații) pe parcursul execuției unui
+program.</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>exemplu:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>variabila
+<b>scor</b> reține un număr.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>la
+început <b>scor &lt;- 0</b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>dacă
+câștig atunci:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>     <b>scor
+&lt;- scor + 1 </b></span><span style='font-family:"Cousine",serif'>(scorul cre</span><span
+style='font-family:"Courier New"'>ște cu 1)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>dacă
+pierd atunci:</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>     <b>scor
+&lt;- scor - 1 </b>(scorul scade cu 1)</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>Tipuri de date (variabile) uzuale în c++</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:.5in;border-collapse:collapse'>
+ <tr style='height:.05pt'>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New"'>Tip de variabilă</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  border-left:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>Exemplu de valoare</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  border-left:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Cousine",serif;color:black'>Semnifica</span></b><b><span
+  style='color:black'>ție</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>7</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>8</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>10</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>-2</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Numere întregi (fără virgulă)</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>string</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>#include &lt;string&gt;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>“Ana are mere”</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>“F”</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>“-1”</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>“10”</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='color:black'>Șiruri de caractere (text de orice fel)</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>float</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>2.3</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>-4.5</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Numere cu virgulă (precizie
+  limitată)</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>double</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>5.999999</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Numere cu virgulă (precizie
+  crescută)</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>bool</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>true  (1)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>false (0)</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Valoare de adevăr (DA sau NU)</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>long</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>922337203685477580</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Numere întregi foarte mari</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=185 valign=top style='width:138.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>auto</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>oricare de mai sus</span></p>
+  </td>
+  <td width=185 valign=top style='width:138.45pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Detectează automat tipul de
+  variabilă după atribuirea acesteia.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Cousine",serif'>Opera</span>ții cu variabile</p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>     </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:.05pt'>
+  <td width=202 valign=top style='width:151.45pt;border:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Cousine",serif'>Opera</span></b><b><span
+  style='color:black'>ția</span></b></p>
+  </td>
+  <td width=182 valign=top style='width:136.5pt;border:solid black 1.0pt;
+  border-left:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>Sintaxa</span></b></p>
+  </td>
+  <td width=218 valign=top style='width:163.5pt;border:solid black 1.0pt;
+  border-left:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>Exemple</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=202 valign=top style='width:151.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Declarare</span></p>
+  </td>
+  <td width=182 valign=top style='width:136.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>tip </span></b><span
+  style='font-family:"Courier New";color:black'>nume_variabila;</span></p>
+  </td>
+  <td width=218 valign=top style='width:163.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>string </span></b><span
+  style='font-family:"Courier New";color:black'>nume;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>int </span></b><span
+  style='font-family:"Courier New";color:black'>nr;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>bool </span></b><span
+  style='font-family:"Courier New";color:black'>e_frig;</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=202 valign=top style='width:151.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Atribuire</span></p>
+  </td>
+  <td width=182 valign=top style='width:136.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>nume_var = <b>valoare;</b></span></p>
+  </td>
+  <td width=218 valign=top style='width:163.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>nume = “Ana”;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>nr = 5;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>e_frig = true;</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=202 valign=top style='width:151.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Declarare + Atribuire</span></p>
+  </td>
+  <td width=182 valign=top style='width:136.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>tip </span></b><span
+  style='font-family:"Courier New";color:black'>nume_var = <b>valoare;</b></span></p>
+  </td>
+  <td width=218 valign=top style='width:163.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>string </span></b><span
+  style='font-family:"Courier New";color:black'>nume = “Maria”;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>int </span></b><span
+  style='font-family:"Courier New";color:black'>nr = 5;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>bool </span></b><span
+  style='font-family:"Courier New";color:black'>e_frig = false;</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=202 valign=top style='width:151.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Cousine",serif;color:black'>Extragere prin afi</span><span
+  style='color:black'>șare(Consultare)</span></p>
+  </td>
+  <td width=182 valign=top style='width:136.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>cout&lt;&lt;</span></b><span
+  style='font-family:"Courier New";color:black'>nume_var<b>&lt;&lt;...</b></span></p>
+  </td>
+  <td width=218 valign=top style='width:163.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>cout&lt;&lt;</span></b><span
+  style='font-family:"Courier New";color:black'>nume<b>&lt;&lt;endl;</b></span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>cout&lt;&lt;</span></b><span
+  style='font-family:"Courier New";color:black'>nr;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>cout&lt;&lt;</span></b><span
+  style='font-family:"Courier New";color:black'>e_frig<b>&lt;&lt;endl;</b></span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=202 valign=top style='width:151.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Extragere prin atribuire</span></p>
+  </td>
+  <td width=182 valign=top style='width:136.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var_a = var_b;</span></p>
+  </td>
+  <td width=218 valign=top style='width:163.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>nume = “Ana”;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>alt_nume = nume;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>nr = nr+1;</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=202 valign=top style='width:151.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Incrementare</span></p>
+  </td>
+  <td width=182 valign=top style='width:136.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var++;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>++var;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = var+1;</span></p>
+  </td>
+  <td width=218 valign=top style='width:163.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>nr++;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>++nr;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>nr = nr+1;</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=202 valign=top style='width:151.45pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>Decrementare</span></p>
+  </td>
+  <td width=182 valign=top style='width:136.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var--;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>--var;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = var -1;</span></p>
+  </td>
+  <td width=218 valign=top style='width:163.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>nr--;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>--nr;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>nr = nr - 1;</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>Operatori</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New"'>Operator</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border:solid black 1.0pt;
+  border-left:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>Sintaxa</span></b></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border:solid black 1.0pt;
+  border-left:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>Exemplu</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>+</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a + b;</span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int var;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int a = 4;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int b = 2;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a + b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var == 6</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>-</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a - b;</span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a - b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var == 4</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>* (produs)</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a * b</span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>8 == a * b;</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>/</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>(div - împărțire întreagă pt
+  int)</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a / b;</span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a / b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var == 2</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>%</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>(modulo - restul împărțirii)</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a % b</span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a % b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var == 1</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>==</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>(egal)</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>a == b //bool</span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int a = 5;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int b = 2;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a == b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var == false</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>!=</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>(diferit)</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>a != //bool</span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int a = 5;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int b = 2;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = a != b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var == true</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>&lt; / &gt;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>(mai mic/mare)</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>a &lt; b //bool</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>a &gt; b </span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int a = 5;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int b = 2;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var1 = a &gt; b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var1 == true</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var2 = a &lt; b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var == false</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>&lt;= / &gt;=</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>(mai mic/mare sau egal)</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>a &gt;= b //bool</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>a &lt;= b</span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int a = 5;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>int b = 2;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var1 = a &gt;= b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var1 == true</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var2 = a &lt;= b;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var == false</span></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=199 valign=top style='width:149.25pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>! </span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>(not)</span></b></p>
+  </td>
+  <td width=185 valign=top style='width:138.75pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>!var //(bool)</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var: bool</span></p>
+  </td>
+  <td width=216 valign=top style='width:2.25in;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var = true;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>var2 = !var;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:black'>//var2 == false</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Cousine",serif'>Aplica</span>ție 1</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>se cere determinarea sumei a două numere
+naturale citite de la tastatură.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>exersare individuală pentru <b>diferență,
+produs </b>și <b>împărțire întreagă</b></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:.5in;border-collapse:collapse'>
+ <tr style='height:.05pt'>
+  <td width=554 valign=top style='width:415.45pt;border:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#557799'>#include &lt;iostream&gt;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#008800'>using</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>namespace</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> std;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> </span></b><b><span
+  style='font-family:"Courier New";color:#0066BB'>main</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>()</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>{</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> numar1;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> numar2;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    cout&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;dati primul numar&quot;</span>&lt;&lt;endl&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;&gt;&gt;&quot;</span>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    cin&gt;&gt;numar1;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    cout&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;dati al doilea numar&quot;</span>&lt;&lt;endl&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;&gt;&gt;&quot;</span>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    cin&gt;&gt;numar2;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> suma = numar1 + numar2;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> diferenta = numar1 - numar2;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> produs = numar1 * numar2;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> impartire = numar1 / numar2;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    cout&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;suma: &quot;</span>&lt;&lt;suma&lt;&lt;endl;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    cout&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;diferenta: &quot;</span>&lt;&lt;diferenta&lt;&lt;endl;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    cout&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;produsul: &quot;</span>&lt;&lt;produs&lt;&lt;endl;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    cout&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;catul: &quot;</span>&lt;&lt;impartire&lt;&lt;endl;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>return</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> </span></b><b><span
+  style='font-family:"Courier New";color:#0000DD'>0</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>}</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>Structura de decizie</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>în programare folosim structuri de decizie
+pentru a putea determina felul în care problema se rezolvă.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>anumite probleme se rezolvă diferit în
+funcție de datele conținute în variabile.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>     </span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>Exemplu:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>     <i>Pentru a putea intra pe Facebook este
+nevoie de o parolă. Programul de la login <b>verifică dacă</b> parola introdusă
+este egală cu parola salvată în bazele de date Facebook.</i></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:.05pt'>
+  <td width=602 valign=top style='width:451.45pt;border:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><span
+  style='font-family:"Courier New";color:#888888'>//undeva în program:</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><b><span
+  style='font-family:"Courier New";color:#008800'>string</span></b><span
+  style='font-family:"Courier New";color:#333333'> email_citire;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><b><span
+  style='font-family:"Courier New";color:#008800'>string</span></b><span
+  style='font-family:"Courier New";color:#333333'> parola_citire;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><b><span
+  style='font-family:"Courier New";color:#008800'>cout</span></b><span
+  style='font-family:"Courier New";color:#333333'>&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;email&gt;&gt;&quot;</span>;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><b><span
+  style='font-family:"Courier New";color:#008800'>cin</span></b><span
+  style='font-family:"Courier New";color:#333333'>&gt;&gt;email_citire;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><b><span
+  style='font-family:"Courier New";color:#008800'>cout</span></b><span
+  style='font-family:"Courier New";color:#333333'>&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;parola&gt;&gt;&quot;</span>;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><b><span
+  style='font-family:"Courier New";color:#008800'>cin</span></b><span
+  style='font-family:"Courier New";color:#333333'>&gt;&gt;parola_citire;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>&nbsp;</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><span
+  style='font-family:"Courier New";color:#888888'>//se preia parola din baza de
+  date:</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><b><span
+  style='font-family:"Courier New";color:#008800'>string</span></b><span
+  style='font-family:"Courier New";color:#333333'> parola_corecta =
+  Database().parola(email_citire);</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#888888'>//dacă parola este aceeași cu
+  cea corectă:</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#333333'>    </span><b><span
+  style='font-family:"Courier New";color:#008800;background:#B6D7A8'>if</span></b><b><span
+  style='font-family:"Courier New";color:#333333;background:#B6D7A8'>(parola_citire
+  == parola_corecta){        </span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>        <span
+  style='background:#B6D7A8'>cout&lt;&lt;&quot;Parola
+  corecta!&quot;&lt;&lt;endl;</span></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><span
+  style='font-family:"Courier New";color:#888888'>//altfel (dacă ea este
+  diferită de cea corectă):</span></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    <span style='background:
+  #B6D7A8'>}</span></span></b><b><span style='font-family:"Courier New";
+  color:#008800;background:#B6D7A8'>else</span></b><b><span style='font-family:
+  "Courier New";color:#333333;background:#B6D7A8'>{</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>        <span
+  style='background:#B6D7A8'>cout&lt;&lt;&quot;Parola
+  gresita!&quot;&lt;&lt;endl;</span></span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    <span style='background:
+  #B6D7A8'>}</span></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Cousine",serif'>Aplica</span>ție 2</p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>exemplul de ora trecută verifica dacă un
+număr este par sau impar.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>un număr este par dacă restul împărțirii la 2
+este 0. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.0in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>dacă restul împărțirii la 2 este 1, numărul
+este impar.</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>Exemplu:</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>5 : 2 = 2 r <b>1              5 este impar</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><u><span
+style='font-family:"Courier New"'>4</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>1</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>4 : 2 = 2 r <b>0              4 este par</b></span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><u><span
+style='font-family:"Courier New"'>4</span></u></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>0</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><i><span
+style='font-family:"Courier New"'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><i><span
+style='font-family:"Courier New"'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><i><span
+style='font-family:"Courier New"'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><i><span
+style='font-family:"Courier New"'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><i><span
+style='font-family:"Courier New"'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><i><span
+style='font-family:"Courier New"'>&nbsp;</span></i></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:.05pt'>
+  <td width=325 valign=top style='width:243.75pt;border:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New"'>Român<span style='color:black'>ă cu sintaxă
+  ca în c++</span></span></b></p>
+  </td>
+  <td width=372 valign=top style='width:279.0pt;border:solid black 1.0pt;
+  border-left:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:black'>C++</span></b></p>
+  </td>
+ </tr>
+ <tr style='height:.05pt'>
+  <td width=325 valign=top style='width:243.75pt;border:solid black 1.0pt;
+  border-top:none;padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New"'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New"'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New"'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New";color:#008800'>spune</span></b><b><span
+  style='font-family:"Courier New";color:black'>&lt;&lt;</span></b><b><span
+  style='font-family:"Courier New";color:#333333;background:#FFF0F0'>&quot;introdu
+  orice numar&gt;&gt;&quot;</span></b><b><span style='font-family:"Courier New";
+  color:black'>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New";color:black'>nr </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>este </span></b><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#008800'>;</span></b><b><span
+  style='font-family:"Courier New";color:black'> </span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New";color:#008800'>citire</span></b><b><span
+  style='font-family:"Courier New";color:black'>&gt;&gt;nr;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New"'>&nbsp;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New";color:#008800'>dacă</span></b><b><span
+  style='font-family:"Courier New";color:black'> </span></b><b><span
+  style='font-family:"Courier New";color:#333333'>nr % </span></b><b><span
+  style='font-family:"Courier New";color:#0000DD'>2</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> == </span></b><b><span
+  style='font-family:"Courier New";color:#0000DD'>0</span></b><b><span
+  style='font-family:"Courier New";color:black'> </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>atunci</span></b><b><span
+  style='font-family:"Courier New";color:black'>{</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New";color:black'>     </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>spune</span></b><b><span
+  style='font-family:"Courier New";color:black'>&lt;&lt;nr&lt;&lt;</span></b><b><span
+  style='font-family:"Courier New";color:#333333;background:#FFF0F0'>&quot;
+  este par!&quot;</span></b><b><span style='font-family:"Courier New";
+  color:black'>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New";color:black'>}</span></b><b><span
+  style='font-family:"Courier New";color:#008800'>altfel</span></b><b><span
+  style='font-family:"Courier New";color:black'>{</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New";color:black'>     </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>spune</span></b><b><span
+  style='font-family:"Courier New";color:black'>&lt;&lt;nr&lt;&lt;</span></b><b><span
+  style='font-family:"Courier New";color:#333333;background:#FFF0F0'>&quot;
+  este impar!&quot;</span></b><b><span style='font-family:"Courier New";
+  color:black'>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><span
+  style='font-family:"Courier New";color:black'>}</span></b></p>
+  </td>
+  <td width=372 valign=top style='width:279.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#557799'>#include &lt;iostream&gt;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#008800'>using</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>namespace</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> std;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> </span></b><b><span
+  style='font-family:"Courier New";color:#0066BB'>main</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>()</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>{</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>cout</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>&lt;&lt;<span
+  style='background:#FFF0F0'>&quot;introdu orice numar&gt;&gt;&quot;</span>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#333399'>int</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> nr;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>cin</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>&gt;&gt;nr;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>if</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> ( nr % </span></b><b><span
+  style='font-family:"Courier New";color:#0000DD'>2</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> == </span></b><b><span
+  style='font-family:"Courier New";color:#0000DD'>0</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>){</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>       
+  cout&lt;&lt;nr&lt;&lt;<span style='background:#FFF0F0'>&quot; este par!&quot;</span>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    }</span></b><b><span
+  style='font-family:"Courier New";color:#008800'>else</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>{</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>       
+  cout&lt;&lt;nr&lt;&lt;<span style='background:#FFF0F0'>&quot; este
+  impar!&quot;</span>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    }</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>    </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>return</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> </span></b><b><span
+  style='font-family:"Courier New";color:#0000DD'>0</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>;</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>}</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-bottom:0in;line-height:115%'><b><i><span
+style='font-family:"Courier New"'>&nbsp;</span></i></b></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>ramura <b>else</b> este opțională. </span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Cousine",serif'>se poate introduce </span>și ramura <b><span
+style='font-family:"Courier New"'>else if </span></b><span style='font-family:
+"Courier New"'>astfel</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;text-indent:-.25in;line-height:115%'><span style='font-family:
+"Courier New"'>•<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-family:"Courier New"'>mai multe despre compunerea structurilor
+discutăm în următoarea lecție.</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0
+ style='margin-left:-.4pt;border-collapse:collapse'>
+ <tr style='height:.05pt'>
+  <td width=325 valign=top style='width:243.75pt;border:solid black 1.0pt;
+  padding:0in 5.0pt 0in 5.0pt;height:.05pt'>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#008800'>if</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> (conditie1){</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#888888'>    //conditie1 == true</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>}</span></b><b><span
+  style='font-family:"Courier New";color:#008800'>else</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>if</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>(conditie2){</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#888888'>    //conditie1 == false</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#888888'>    //conditie2 == true</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>}</span></b><b><span
+  style='font-family:"Courier New";color:#008800'>else</span></b><b><span
+  style='font-family:"Courier New";color:#333333'> </span></b><b><span
+  style='font-family:"Courier New";color:#008800'>if</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>(conditie3){</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#888888'>    //conditie1 == false</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#888888'>    //conditie2 == false</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#888888'>    //conditie3 == true</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#333333'>}</span></b><b><span
+  style='font-family:"Courier New";color:#008800'>else</span></b><b><span
+  style='font-family:"Courier New";color:#333333'>{</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#888888'>    //conditie1 == false</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#888888'>    //conditie2 == false</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:normal'><b><span
+  style='font-family:"Courier New";color:#888888'>    //conditie3 == false</span></b></p>
+  <p class=MsoNormal style='margin-bottom:0in;line-height:110%'><b><span
+  style='font-family:"Courier New";color:#333333'>}</span></b></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;line-height:115%'><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+</div>
+
+</body>
+
+</html>

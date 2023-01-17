@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>CPP Tema 2</title>
+<link rel="icon" href="../icon.ico">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../h/styles/github-dark.min.css">
+<script src="../h/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+<a href="../index.html">&lt&lt Home</a>
+<p>Înainte de a face tema, consultați <a href="../lectii/l2.html">lecția</a> pentru inspirație.</p>
+<hr>
+<h1>Tema A</h1>
+<ul>
+    <li>Creați o aplicație de tip consolă care citește de la tastatură două numere întregi <em>nr1</em> și <em>nr2</em>.</li> 
+    <li>Ulterior programul afișează în consolă media lor aritmetică.</li>
+    <li>Media aritmetică a două numere este suma acestora împărțită la 2.</li>
+    <li>Exemplu <em>nr=10; nr2=4;</em> pe ecran se va afișa <em>7</em> deoarece (10+4)/2 = 7.</li>
+</ul>
+<hr>
+<h1>Tema B</h1>
+<ul>
+    <li>Creați o aplicație de tip consolă care citește de la tastatură două numere întregi <em>nr1</em> și <em>nr2</em>.</li>  
+    <li>Ulterior programul afișează în consolă diferența pozitivă a acestora.</li>
+    <li>Prin diferența pozitivă se înțelege scăderea din numărul mai mare numărul mai mic.</li>
+    <li>Exemplu <em>nr=10; nr2=4;</em> pe ecran se va afișa <em>6</em> deoarece 10 - 4 = 6. </li>
+    <li>Exemplu <em>nr=4; nr2=10;</em> pe ecran se va afișa <em>6</em> deoarece 10 - 4 = 6. </li>
+</ul>
+
+<hr>
+<h1>Tema C</h1>
+<ul>
+    <li>Citiți din consolă un string <em>cuvant</em></li>
+    <li>Verificați dacă <em>cuvant</em> este palindrom și afișați pe ecran un mesaj corespunzător</li>
+    <li>Un cuvânt este palindrom dacă se citește la fel și în oglindă</li>
+    <li>Exemplu: <em>radar, supus, rotor, capac, cec, alabala ...</em>
+    <li>Nu uitați să importați biblioteca &ltstring&gt</li>
+    <li>Biblioteca &ltalgorithm&gt oferă metoda <strong>reverse</strong> care inversează un string</li>
+</ul>
+    <pre>
+        <code>
+            #include &lt;iostream&gt;
+            #include &lt;string&gt;
+            #include &lt;algorithm&gt;
+            using namespace std;
+            
+            int main()
+            {
+                string cuvant = "david";
+                reverse(cuvant.begin(), cuvant.end());
+                cout << cuvant << endl; 
+                return 0;
+            }
+        </code>
+    </pre>
+<ul>
+    <li>Folosiți corect metoda <strong>reverse</strong> aplicată pe o copie a cuvântului citit de la tastatură pentru a putea verifica dacă acesta este sau nu palindrom.</li>
+</ul>
+<hr>
+<p>Timp de lucru: 1 săptămână</p>
+<a href="compiler.html">Compilator online</a><br>
+<a href="">Video cu lecția</a>
+
+</body>
+
+
+
+
+</html>

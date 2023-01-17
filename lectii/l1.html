@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>CPP Tema 1</title>
+<link rel="icon" href="../icon.ico">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../h/styles/github-dark.min.css">
+<script src="../h/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+    <a href="../index.html">&lt&lt Home</a>
+    <hr>
+    <h2>Instalarea mediului de programare</h2>
+    
+    <ul>
+    <li>Instalăm <a href="https://www.fosshub.com/Code-Blocks.html?dwl=codeblocks-20.03mingw-setup.exe">Code::Blocks</a> împreună cu un compilator de c++.</li>
+    <li>Oare ce face un compilator?</li>
+
+    <div class="i"><img src="./l1/1.png" width="600"></div>
+    <div class="i"><img src="./l1/2.png" width="600"></div>
+    <br><li>Lăsăm toate opțiunile bifate implicit</li><br>
+    <div class="i"><img src="./l1/3.png" width="600"></div>
+    <div class="i"><img src="./l1/4.png" width="600"></div>
+        <br><li>Încă puțin și se poate deschide Code::Blocks</li><br>
+    <div class="i"><img src="./l1/6.png" width="600"></div>
+    </ul>
+
+    <hr>
+    
+    <h2>Crearea unui proiect nou de tip consolă</h2>
+    <ul>
+        <li>Se creează pe desktop un folder nou cu numele vostru (acesta va fi folderul de lucru în care se găsesc toate proiectele)</li>
+        <li>Crearea unui proiect nou de tip <strong>consolă</strong></li>
+            <br><div class="i"><img src="./l1/7.png" width="600"></div><br>
+        <li>Selectăm <em>"Console Application"</em></li>
+            <br><div class="i"><img src="./l1/8.png" width="600"></div><br>
+        <li>Selectăm <em>"C++"</em></li>
+            <br><div class="i"><img src="./l1/9.png" width="600"></div><br>
+            
+        <li>Alegem un titlu de proiect în <strong>Project title</strong></li>
+        <li>În căsuța <strong>Folder to create project in</strong> selectăm folderul cu numele elevului de pe desktop</li>
+        
+            <br><div class="i"><img src="./l1/10.png" width="600"></div><br>
+
+        <li></strong>Finish</strong></li>
+        
+            <br><div class="i"><img src="./l1/11.png" width="600"></div><br>
+        <hr>
+        
+        <li>În bara din stânga avem un explorer al proiectelor deschise</li>
+            <br><div class="i"><img src="./l1/12.png" width="600"></div><br>
+            
+        <li>În directorul <strong>Sources</strong> se găsește sursa de cod cu extensia .cpp</li>
+            <br><div class="i"><img src="./l1/13.png" width="600"></div><br>
+        <li>Pentru început nu trebuie să înțelegeți toate elementele din cod. Acestea vor fi explicate pas cu pas în lecțiile următoare.</li>
+        <li>Pentru a rula programul apăsăm tasta <strong>F9</strong> (sau <strong>Fn + F9</strong> pentru tastaturile care au F9 scris mic sus).</li>
+        <li>Alternativ se poate rula apăsând pe rotița cu play din meniul de sus.</li>
+            <br><div class="i"><img src="./l1/14.png" width="50"></div><br>
+        <li>În acest moment se deschide consola în care apare mesajul “Hello world!”.</li>
+        <li>Consola se poate închide cu X după terminarea programului.</li>
+            <br><div class="i"><img src="./l1/15.png" width="600"></div><br>
+        <li>Dacă modificăm linia de instrucțiune 7 și între ghilimele scriem un alt mesaj, acesta va apărea în consolă la următoarea rulare.</li>
+            <br><div class="i"><img src="./l1/16.png" width="600"></div><br>
+    </ul>
+    <hr>
+    <h2>Ce este consola? Cum comunică un calculator?</h2>
+    <ul>
+        <li>Orice mașină de calcul comunică cu utilizatorii printr-o interfață. Programele au diferite interfețe. Cele mai cunoscute interfețe sunt GUI (Graphical User Interface) care folosesc mouse-ul și tastatura ca principal mijloc de comunicare <strong>input</strong> și elementele grafice ca mijloc de comunicare <strong>output</strong>.</li>
+        <li>Input și output? ce înseamnă?</li>
+        <li>Aplicațiile pe care le vom crea în c++ în primă fază for folosi o interfață de tip <strong>consolă</strong>. Această interfață permite comunicarea cu calculatorul doar prin intermediul textului introdus (input) sau afișat (output) în consolă.</li>
+        <li>Se rulează următorul program ca exemplu, fără a explica codul din spate (doar funcționarea este esențială).</li>
+        
+        <pre>
+            <code class="cpp">
+                #include &lt;iostream&gt;
+
+                using namespace std;
+                
+                int main()
+                {
+                    cout << "introdu orice numar>>";
+                    int nr;
+                    cin >> nr;
+                    if ( nr % 2 == 0){
+                        cout << "numarul " << nr << " este par!" << endl;
+                    }else{
+                        cout << "numarul " << nr << " este impar!" << endl;
+                    }
+                    return 0;
+                }
+            </code>
+        </pre>
+    </ul>
+    <hr>
+    <h2>Aplicații</h2>
+    <ol>
+        <li>Salut, Andrei!</li>
+        <ul>
+            <li>Se importă biblioteca <code class="cpp">&lt;string&gt;.</code></li>                                                               
+            <li>Se declară o variabilă <code class="cpp">string nume;</code>     </li>                                                      
+            <li>Se citește variabila de la tastatură, citirea este însoțită mereu de un mesaj sugestiv. </li>      
+            <li>Se afișează conținutul variabilei împreună cu mesajul de salut.                   </li>            
+            <li>Din nou, nu trebuie să înțelegeți toate elementele din cod. Este suficient să urmăriți fluxul de input și output al programului.      </li>
+
+            <pre>
+            <code class="cpp">
+                #include &lt;iostream&gt;
+                #include &lt;string&gt;
+                using namespace std;
+                
+                int main()
+                {
+                    string nume;
+                    cout << "cum te cheama?" << endl << ">>";
+                    cin >> nume;
+                    cout << "Salut, " << nume << "!" << endl;
+                    return 0;
+                }
+            </code>
+        </pre>
+
+            
+        </ul>
+        <li>ASCII Art</li>
+        <ul>
+        
+        
+            <li>veți afișa în consolă tot felul de desene construite din caractere ASCII (litere, cifre și simboluri).                  </li>
+            <li>se poate accesa site-ul <a href="https://www.asciiart.eu/">ASCII Art Archive</a> de unde se pot alege modele.                                                  </li>
+            <li>fiecare <strong>linie</strong> trebuie copiată (CTRL+C) din construcțiile ASCII ART și introdusă (CTRL+V) între ghilimelele de la        </li>
+            <li><code class="cpp"> cout &lt;&lt; "----" &gt;&gt; endl; </code>ca în exemplul de mai jos.                                                                          </li>
+            
+            <pre>
+            <code class="cpp">
+                #include &lt;iostream&gt;
+                #include &lt;string&gt;
+                using namespace std;
+                
+                int main()
+                {
+                    cout << "    /\\_____/\\" << endl;
+                    cout << "   /  o   o  \\" << endl;
+                    cout << "  ( ==  ^  == )" << endl;
+                    cout << "   )         (" << endl;
+                    cout << "  (           )" << endl;
+                    cout << " ( (  )   (  ) )" << endl;
+                    cout << "(__(__)___(__)__)" << endl;
+                    return 0;
+                }
+            </code>
+        </pre>
+        <li><strong>Mare atenție!</strong> Unele caractere cum ar fi <code class="cpp">“ \ ; ‘</code> 
+        aparțin sintaxei c++. </li>
+        <li>Astfel, compilatorul le interpretează ca elemente de cod. Pentru a evita astfel de erori, înaintea oricărui astfel de caracter se poate pune un <code class="cpp">\</code> (escape character) pentru a anula efectul sintactic al respectivului caracter.</li>
+        <li>Compilatorul vă sugerează cu roșu linia la care s-a întâlnit o eroare.</li>
+        <li>De exemplu, se observă cum în c++ între ghilimele se scrie un text (string). Dar dacă imaginea noastră ASCII ART conține ghilimele, asta va genera o eroare de sintaxă în cod. Dacă punem un \ înainte de “ efectul lor de delimitator de string va dispărea.</li> 
+        <li>Se observă cum în exemplu, fiecare \ este precedat de un alt \ care îi anulează efectul.                 </li>
+        
+            <br><div class="i"><img src="./l1/17.png" width="600"></div><br>
+        <li>În consolă, acel caracter \ pus în plus nu mai apare.</li>
+        </ul>                                                                                                         
+    </ol>
+    
+</body>
+
+</html>

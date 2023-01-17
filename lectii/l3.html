@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>CPP Tema 1</title>
+<link rel="icon" href="../icon.ico">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../h/styles/github-dark.min.css">
+<script src="../h/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+<a href="../index.html">&lt&lt Home</a>
+<hr>
+    <h2>True sau False?</h2>
+    <p>Ne reamintim că în lecția trecută am povestit despre structura de decizie compusă din instrucțiuni de tipul <em>if - else.</em>
+    </p>
+    <p>Pentru a înțelege mai profund semnificația acesteia, analizăm următorul scenariu real:<br>
+        <em>Acționarea unui întrerupător</em>
+    <p>
+    “Programul” ar trebui să poată decide dacă aprinde sau stinge becul. Cum ar putea să facă asta?
+    </p>
+    
+    <ul>
+        <li>Pentru început acesta ar trebui să cunoască starea becului. </li>
+        <li>Becul se poate afla în două stadii:                         </li>
+        
+        <pre>
+            <code class="c++">
+                aprins
+                stins
+            </code>
+        </pre>
+        
+        <li>Observăm că cele două stadii se potrivesc tipului de date bool al limbajului c++</li>
+        
+        <pre>
+            <code class="c++">
+                true
+                <span style="color : #f73939;">false</span>
+            </code>
+        </pre>
+        
+        <li>astfel, putem reține valoarea becului într-o variabilă de tipul bool pe care să o numim sugestiv <strong>becul_este_aprins</strong>                                          </li>
+        <li>această variabilă va avea valoarea TRUE dacă becul este APRINS și FALSE dacă becul este STINS                                                               </li>
+        <li>în acest fel, pentru a aprinde becul, variabila <strong>becul_este_aprins</strong> va trebui setată la TRUE, respectiv pentru a îl stinge variabila va fi setată la FALSE    </li>
+        <li>așadar, presupunem că la orice acționare a întrerupătorului, becul ar trebui să se aprindă sau să se stingă, conform următorului fragment de cod c++        </li>
+                                                                                                           <pre>
+            <code class="c++">
+            if(becul_este_aprins == true){   ///dacă becul este aprins
+                becul_este_aprins = false;       ///stinge becul
+            }
+            else{                           ///altfel
+                becul_este_aprins = true;	     ///aprinde becul
+            }
+            </code>
+        </pre>
+    
+    
+    <li>În final, pentru a nu afișa 0 sau 1, putem să mai construim un if statement pentru a afișa în cuvinte dacă becul este aprins sau nu.</li>
+    
+    <pre>
+            <code class="c++">
+            #include &lt;iostream&gt;
+
+            using namespace std;
+            
+            int main()
+            {
+                //declarăm o variabilă care indică starea becului
+                bool becul_este_aprins;
+                
+                //citim starea inițială a becului de la tastatură
+                cout << "Cum este becul? stins:0 aprins:1 >>";
+                cin >> becul_este_aprins;
+                
+                
+                //stingem sau aprindem becul în funcție de starea acestuia inițială
+                
+                if(becul_este_aprins == true){
+                    becul_este_aprins = false;
+                }else{
+                    becul_este_aprins = true;
+                }
+                
+                
+                //afișăm dacă becul s-a aprins sau s-a stins la acționarea întrerupătorului
+                
+                if(becul_este_aprins == true){
+                    cout << "Becul s-a aprins" << endl;
+                }else{
+                    cout << "Becul s-a stins" << endl;
+                }
+                return 0;
+            }
+            </code>
+        </pre>
+        
+        <li>Rezultatele așteptate sunt:</li>
+        
+        <div class="tabel">
+            <table BORDER="1">
+                <tr VALIGN="TOP">
+                    <td><STRONG>Date de intrare</STRONG></td>
+                    <td><STRONG>Date de ieșire</STRONG></td>
+                    <td><STRONG>Valoarea finală a variabilei</STRONG></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>1 (true)</td>
+                    <td>Becul s-a stins</td>
+                    <td>0 (<span style="color : #f73939;">false</span>)</td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>0 (<span style="color : #f73939;">false</span>)</td>
+                    <td>Becul s-a aprins</td>
+                    <td>1 (true)</td>
+                </tr>
+            </table>
+        </div>
+        
+        <li>Observăm că primul if statement afectează variabila în felul următor</li>
+        
+        <div class="tabel">
+            <table BORDER="1">
+                <tr VALIGN="TOP">
+                    <td><STRONG>Variabila inițial</STRONG></td>
+                    <td><STRONG>Variabila după if</STRONG></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>true</td>
+                    <td><span style="color : #f73939;">false</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td> <span style="color : #f73939;">false</span></td>
+                    <td>true</td>
+                </tr>
+            </table>
+        </div>
+        
+        <li>Cu alte cuvinte, variabila primește valoarea inversă valorii inițiale                                 </li>
+        <li>Această inversare a valorii se cheamă <strong>negare</strong>(nu) și se obține folosind operatorul ! (not) astfel încât</li>
+        
+        <pre>
+            <code class="c++">
+                !true == false
+                !false == true
+            </code>
+        </pre>
+        
+        <li>acest operator l-am mai întâlnit când am scris <strong>!=</strong> (diferit) și semnifică <strong>nu</strong> este egal</li>
+
+        <li>folosind acest operator, putem modifica codul pentru a renunța la if statement</li>
+        
+        <table>
+        <tr>
+            <td>
+            <div>
+                <h4>Cod inițial:
+                    <pre style="margin: 0px 0px 0px 0px">
+                        <code class="c++" style="margin: 0px 0px 0px 0px">
+if(becul_este_aprins == true){   
+    becul_este_aprins = false;       
+}
+else{ 
+    becul_este_aprins = true;
+}
+                        </code>
+                    </pre>
+            </div>
+            </td>
+            <td>
+            <div>
+                <h4>Echivalent:
+                    <pre style="margin: 0px 0px 0px 0px">
+                        <code class="c++" style="margin: 0px 0px 0px 0px">
+                        
+                        
+becul_este_aprins = !becul_este_aprins;
+
+
+
+                        </code>
+                    </pre>
+            </div>
+            </td>
+        </tr>
+        </table>
+    
+    <li>la fel ca și operatorul ! mai există și alți operatori folosiți pentru valorile <strong>booleene:</strong></li><br>
+    
+    <ol>
+    <li>Operatorul <em>!v</em> (not) (nu)</li>
+    <ul><li>Efectul acestuia este negarea valorii</li></ul>
+    
+        <div class="tabel">
+            <table BORDER="1">
+                <tr VALIGN="TOP">
+                    <td><STRONG>v</STRONG></td>
+                    <td><STRONG>!v</STRONG></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>true</td>
+                    <td><span style="color : #f73939;">false</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td> <span style="color : #f73939;">false</span></td>
+                    <td>true</td>
+                </tr>
+            </table>
+        </div>
+        
+        <li>Operatorul <em>&&</em> (and) (și)</li>
+        <ul>
+            <li>Operatorul se aplică asupra a două valori de tipul bool
+            </li>
+            <li>devine TRUE doar dacă <strong>ambele</strong> valori sunt TRUE</li>
+        </ul>
+    
+        <div class="tabel">
+            <table BORDER="1">
+                <tr VALIGN="TOP">
+                    <td><STRONG>a</STRONG></td>
+                    <td><STRONG>b</STRONG></td>
+                    <td><STRONG>a && b</STRONG></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>true</td>
+                    <td>true</td>
+                    <td>true</td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>true</td>
+                    <td><span style="color : #f73939;">false</span></td>
+                    <td><span style="color : #f73939;">false</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td> <span style="color : #f73939;">false</span></td>
+                    <td>true</td>
+                    <td><span style="color : #f73939;">false</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td> <span style="color : #f73939;">false</span></td>
+                    <td><span style="color : #f73939;">false</span></td>
+                    <td><span style="color : #f73939;">false</span></td>
+                </tr>
+            </table>
+        </div>
+        
+        <li>Operatorul <em>||</em> (or) (sau)</li>
+        <ul>
+            <li>operatorul se aplică asupra a două valori de tipul bool
+
+            </li>
+            <li>devine TRUE dacă <strong>cel puțin una din valori</strong> este TRUE</li>
+        </ul>
+    
+        <div class="tabel">
+            <table BORDER="1">
+                <tr VALIGN="TOP">
+                    <td><STRONG>a</STRONG></td>
+                    <td><STRONG>b</STRONG></td>
+                    <td><STRONG>a || b</STRONG></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>true</td>
+                    <td>true</td>
+                    <td>true</td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>true</td>
+                    <td><span style="color : #f73939;">false</span></td>
+                    <td>true</td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td> <span style="color : #f73939;">false</span></td>
+                    <td>true</td>
+                    <td>true</td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td> <span style="color : #f73939;">false</span></td>
+                    <td><span style="color : #f73939;">false</span></td>
+                    <td><span style="color : #f73939;">false</span></td>
+                </tr>
+            </table>
+        </div>
+    </ol>
+</ul>
+<hr>
+    <h2>Aplicații</h2>
+    <ol>
+        <li>Să se verifice dacă un număr <strong>nr</strong> este cuprins între numerele <strong>a</strong> și <strong>b</strong>; <strong>(cu a < b)</strong></li>
+        
+        <p>
+        Exemplu: nr=2,  a=0, b=10 => DA <br>
+        Exemplu: nr=11, a=0, b=10 => NU <br>
+
+        <ul><li>Pentru asta trebuie să verificăm</li></ul>
+        dacă nr &gt; a și nr &lt; b 
+        </p>
+        
+        <pre>
+            <code class="c++">
+                #include &lt;iostream&gt;
+
+                using namespace std;
+                
+                int main()
+                {
+                    int nr;
+                    int a;
+                    int b;
+                
+                    cout << "nr>>";
+                    cin >> nr;
+                
+                    cout << "a>>";
+                    cin >> a;
+                
+                    cout << "b>>";
+                    cin >> b;
+                
+                    if(nr &gt; a && nr &lt; b){
+                        cout << "DA" << endl;
+                    }else{
+                        cout << "NU" << endl;
+                    }
+                    return 0;
+                }
+            </code>
+        </pre>
+    
+        <div class="i">
+            <img src="l3/1.png" width="700">
+        </div>
+    
+        <li>Să se verifice dacă un număr <strong>nr</strong> <u>NU</u> este cuprins între numerele <strong>a</strong> și <strong>b</strong>; <strong>(cu a < b)</strong></li>
+        
+        <p>
+        Exemplu: nr=2,  a=0, b=10 => NU <br>
+        Exemplu: nr=11, a=0, b=10 => DA <br>
+
+        <ul><li>Pentru asta trebuie să verificăm</li></ul>
+        dacă nr &lt;= a și nr &gt;= b 
+        </p>
+        
+        <pre>
+            <code class="c++">
+                #include <iostream>
+                using namespace std;
+                
+                int main()
+                {
+                    int nr;
+                    int a;
+                    int b;
+                
+                    cout << "nr>>";
+                    cin >> nr;
+                
+                    cout << "a>>";
+                    cin >> a;
+                
+                    cout << "b>>";
+                    cin >> b;
+                
+                    if(nr &lt;= a || nr &gt;= b){
+                        cout << "DA" << endl;
+                    }else{
+                        cout << "NU" << endl;
+                    }
+                    return 0;
+                }
+            </code>
+        </pre>
+        
+        <ul><li>Alternativ se poate verifica dacă numărul este cuprins între a  și b, urmând negarea rezultatului (deoarece cele două cazuri se exclud reciproc: fie numărul este cuprins, fie nu)</li></ul>
+        
+        <pre>
+            <code class="c++">
+                if(!(nr &gt; a && nr &lt; b)){
+                    cout << "DA" << endl;
+                }else{
+                    cout << "NU" << endl;
+                }
+
+            </code>
+        </pre>
+        
+        <ul><li>o variantă asemănătoare este doar schimbarea a ceea ce se afișează în consolă</li></ul>
+        
+        <pre>
+            <code class="c++">
+                if(nr &gt; a && nr &lt; b){
+                    cout << "NU" << endl;
+                }else{
+                    cout << "DA" << endl;
+                }
+
+            </code>
+        </pre>
+    
+    </ol>
+
+
+</body>
+
+</html>
