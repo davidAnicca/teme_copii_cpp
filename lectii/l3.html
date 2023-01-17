@@ -49,12 +49,12 @@
         <li>așadar, presupunem că la orice acționare a întrerupătorului, becul ar trebui să se aprindă sau să se stingă, conform următorului fragment de cod c++        </li>
                                                                                                            <pre>
             <code class="c++">
-            if(becul_este_aprins == true){   ///dacă becul este aprins
-                becul_este_aprins = false;       ///stinge becul
-            }
-            else{                           ///altfel
-                becul_este_aprins = true;	     ///aprinde becul
-            }
+    if(becul_este_aprins == true){   ///dacă becul este aprins
+        becul_este_aprins = false;       ///stinge becul
+    }
+    else{                           ///altfel
+        becul_este_aprins = true;	     ///aprinde becul
+    }
             </code>
         </pre>
     
@@ -63,38 +63,38 @@
     
     <pre>
             <code class="c++">
-            #include &lt;iostream&gt;
-
-            using namespace std;
-            
-            int main()
-            {
-                //declarăm o variabilă care indică starea becului
-                bool becul_este_aprins;
-                
-                //citim starea inițială a becului de la tastatură
-                cout << "Cum este becul? stins:0 aprins:1 >>";
-                cin >> becul_este_aprins;
-                
-                
-                //stingem sau aprindem becul în funcție de starea acestuia inițială
-                
-                if(becul_este_aprins == true){
-                    becul_este_aprins = false;
-                }else{
-                    becul_este_aprins = true;
-                }
-                
-                
-                //afișăm dacă becul s-a aprins sau s-a stins la acționarea întrerupătorului
-                
-                if(becul_este_aprins == true){
-                    cout << "Becul s-a aprins" << endl;
-                }else{
-                    cout << "Becul s-a stins" << endl;
-                }
-                return 0;
-            }
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+    
+    int main()
+    {
+        //declarăm o variabilă care indică starea becului
+        bool becul_este_aprins;
+        
+        //citim starea inițială a becului de la tastatură
+        cout << "Cum este becul? stins:0 aprins:1 >>";
+        cin >> becul_este_aprins;
+        
+        
+        //stingem sau aprindem becul în funcție de starea acestuia inițială
+        
+        if(becul_este_aprins == true){
+            becul_este_aprins = false;
+        }else{
+            becul_este_aprins = true;
+        }
+        
+        
+        //afișăm dacă becul s-a aprins sau s-a stins la acționarea întrerupătorului
+        
+        if(becul_este_aprins == true){
+            cout << "Becul s-a aprins" << endl;
+        }else{
+            cout << "Becul s-a stins" << endl;
+        }
+        return 0;
+    }
             </code>
         </pre>
         
@@ -144,8 +144,8 @@
         
         <pre>
             <code class="c++">
-                !true == false
-                !false == true
+    !true == false
+    !false == true
             </code>
         </pre>
         
@@ -302,32 +302,32 @@ becul_este_aprins = !becul_este_aprins;
         
         <pre>
             <code class="c++">
-                #include &lt;iostream&gt;
-
-                using namespace std;
-                
-                int main()
-                {
-                    int nr;
-                    int a;
-                    int b;
-                
-                    cout << "nr>>";
-                    cin >> nr;
-                
-                    cout << "a>>";
-                    cin >> a;
-                
-                    cout << "b>>";
-                    cin >> b;
-                
-                    if(nr &gt; a && nr &lt; b){
-                        cout << "DA" << endl;
-                    }else{
-                        cout << "NU" << endl;
-                    }
-                    return 0;
-                }
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+    
+    int main()
+    {
+        int nr;
+        int a;
+        int b;
+    
+        cout << "nr>>";
+        cin >> nr;
+    
+        cout << "a>>";
+        cin >> a;
+    
+        cout << "b>>";
+        cin >> b;
+    
+        if(nr &gt; a && nr &lt; b){
+            cout << "DA" << endl;
+        }else{
+            cout << "NU" << endl;
+        }
+        return 0;
+    }
             </code>
         </pre>
     
@@ -347,31 +347,31 @@ becul_este_aprins = !becul_este_aprins;
         
         <pre>
             <code class="c++">
-                #include <iostream>
-                using namespace std;
-                
-                int main()
-                {
-                    int nr;
-                    int a;
-                    int b;
-                
-                    cout << "nr>>";
-                    cin >> nr;
-                
-                    cout << "a>>";
-                    cin >> a;
-                
-                    cout << "b>>";
-                    cin >> b;
-                
-                    if(nr &lt;= a || nr &gt;= b){
-                        cout << "DA" << endl;
-                    }else{
-                        cout << "NU" << endl;
-                    }
-                    return 0;
-                }
+    #include <iostream>
+    using namespace std;
+    
+    int main()
+    {
+        int nr;
+        int a;
+        int b;
+    
+        cout << "nr>>";
+        cin >> nr;
+    
+        cout << "a>>";
+        cin >> a;
+    
+        cout << "b>>";
+        cin >> b;
+    
+        if(nr &lt;= a || nr &gt;= b){
+            cout << "DA" << endl;
+        }else{
+            cout << "NU" << endl;
+        }
+        return 0;
+    }
             </code>
         </pre>
         
@@ -379,11 +379,11 @@ becul_este_aprins = !becul_este_aprins;
         
         <pre>
             <code class="c++">
-                if(!(nr &gt; a && nr &lt; b)){
-                    cout << "DA" << endl;
-                }else{
-                    cout << "NU" << endl;
-                }
+    if(!(nr &gt; a && nr &lt; b)){
+        cout << "DA" << endl;
+    }else{
+        cout << "NU" << endl;
+    }
 
             </code>
         </pre>
@@ -392,12 +392,11 @@ becul_este_aprins = !becul_este_aprins;
         
         <pre>
             <code class="c++">
-                if(nr &gt; a && nr &lt; b){
-                    cout << "NU" << endl;
-                }else{
-                    cout << "DA" << endl;
-                }
-
+    if(nr &gt; a && nr &lt; b){
+        cout << "NU" << endl;
+    }else{
+        cout << "DA" << endl;
+    }
             </code>
         </pre>
     

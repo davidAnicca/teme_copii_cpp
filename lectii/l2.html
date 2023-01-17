@@ -20,14 +20,14 @@
 
     <pre>
             <code>
-            variabila scor reține un număr.
-            la început scor <- 0
+    variabila scor reține un număr.
+    la început scor <- 0
     
-            dacă câștig atunci:
-                scor <- scor + 1 (scorul crește cu 1)
-            
-            dacă pierd atunci:
-                scor <- scor - 1 (scorul scade cu 1)
+    dacă câștig atunci:
+        scor <- scor + 1 (scorul crește cu 1)
+    
+    dacă pierd atunci:
+        scor <- scor - 1 (scorul scade cu 1)
             </code>
     </pre>
     <hr>
@@ -311,29 +311,29 @@
         
         <pre>
             <code class="c++">
-            #include &lt;iostream&gt;
-            using namespace std;
-            
-            int main()
-            {
-                int numar1;
-                int numar2;
-                cout << "dati primul numar" << endl << ">>";
-                cin >> numar1;
-                cout << "dati al doilea numar" << endl << ">>";
-                cin >> numar2;
-            
-                int suma = numar1 + numar2;
-                int diferenta = numar1 - numar2;
-                int produs = numar1 * numar2;
-                int impartire = numar1 / numar2;
-            
-                cout << "suma: " << suma << endl;
-                cout << "diferenta: " << diferenta << endl;
-                cout << "produsul: " << produs << endl;
-                cout << "catul: " << impartire << endl;
-                return 0;
-            }
+    #include &lt;iostream&gt;
+    using namespace std;
+    
+    int main()
+    {
+        int numar1;
+        int numar2;
+        cout << "dati primul numar" << endl << ">>";
+        cin >> numar1;
+        cout << "dati al doilea numar" << endl << ">>";
+        cin >> numar2;
+    
+        int suma = numar1 + numar2;
+        int diferenta = numar1 - numar2;
+        int produs = numar1 * numar2;
+        int impartire = numar1 / numar2;
+    
+        cout << "suma: " << suma << endl;
+        cout << "diferenta: " << diferenta << endl;
+        cout << "produsul: " << produs << endl;
+        cout << "catul: " << impartire << endl;
+        return 0;
+    }
             </code>
         </pre>
         
@@ -351,26 +351,26 @@
         
         <pre>
             <code class="c++">
-            //undeva în program:
+        //undeva în program:
 
-            string email_citire;
-            string parola_citire;
+        string email_citire;
+        string parola_citire;
+    
+        cout << "email>>";
+        cin >> email_citire;
+        cout << "parola>>";
+        cin >> parola_citire;
+    
+        //se preia parola din baza de date:
+        string parola_corecta = Database().parola(email_citire);
         
-            cout << "email>>";
-            cin >> email_citire;
-            cout << "parola>>";
-            cin >> parola_citire;
-        
-            //se preia parola din baza de date:
-            string parola_corecta = Database().parola(email_citire);
-            
-        //dacă parola este aceeași cu cea corectă:
-            if(parola_citire == parola_corecta){        
-                cout << "Parola corecta!" << endl;
-        //altfel (dacă ea este diferită de cea corectă):
-            }else{
-                cout << "Parola gresita!" << endl;
-            }
+    //dacă parola este aceeași cu cea corectă:
+        if(parola_citire == parola_corecta){        
+            cout << "Parola corecta!" << endl;
+    //altfel (dacă ea este diferită de cea corectă):
+        }else{
+            cout << "Parola gresita!" << endl;
+        }
             </code>
         </pre>
     
@@ -396,21 +396,21 @@
         
         <pre>
             <code class="c++">
-                #include &lt;iostream&gt;
-                using namespace std;
-                int main()
-                {
-                    cout << "introdu orice numar>>";
-                    int nr;
-                    cin >> nr;
-                    
-                    if ( nr % 2 == 0){
-                        cout << nr << " este par!";
-                    }else{
-                        cout << nr << " este impar!";
-                    }
-                    return 0;
-                }
+    #include &lt;iostream&gt;
+    using namespace std;
+    int main()
+    {
+        cout << "introdu orice numar>>";
+        int nr;
+        cin >> nr;
+        
+        if ( nr % 2 == 0){
+            cout << nr << " este par!";
+        }else{
+            cout << nr << " este impar!";
+        }
+        return 0;
+    }
             </code>
         </pre>
         
@@ -420,20 +420,20 @@
 
         <pre>
             <code class="c++">
-                if (conditie1){
-                    //conditie1 == true
-                }else if(conditie2){
-                    //conditie1 == false
-                    //conditie2 == true
-                }else if(conditie3){
-                    //conditie1 == false
-                    //conditie2 == false
-                    //conditie3 == true
-                }else{
-                    //conditie1 == false
-                    //conditie2 == false
-                    //conditie3 == false
-                }
+    if (conditie1){
+        //conditie1 == true
+    }else if(conditie2){
+        //conditie1 == false
+        //conditie2 == true
+    }else if(conditie3){
+        //conditie1 == false
+        //conditie2 == false
+        //conditie3 == true
+    }else{
+        //conditie1 == false
+        //conditie2 == false
+        //conditie3 == false
+    }
             </code>
         </pre>
         
