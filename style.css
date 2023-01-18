@@ -14,9 +14,6 @@ img{
 
 .i {
     text-align: center;
-    
-    
-    
 }
 
 .i2 {
@@ -40,6 +37,7 @@ code{
         user-select: none;
     border-radius: 25px;
 }
+
 
 .tabel{
     margin: 5% 15% 5% 15%;

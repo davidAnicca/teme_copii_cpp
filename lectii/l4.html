@@ -12,8 +12,486 @@
 </head>
 
 <body>
-<a href="../index.html">&lt&lt Home</a>
+<a href="../index.html">&lt;&lt; Home</a>
+<hr>
+    <h2>Introducere în structurile repetitive</h2>
 
+    <ol>
+        <li>Restul împărțirii la 10</li>
+        <ul>
+            <li>Împărțind un număr întreg la 10 obținem un <strong>cât</strong> și un <strong>rest</strong>.</li>
+            <li>Restul împărțirii la 10 indică întotdeauna ultima cifră a numărului.</li>
+            <li>Exemplu:</li>
+        </ul>
+        
+        <div class="tabel">
+            <table BORDER="1"> 
+                <tr VALIGN="TOP">
+                    <td><STRONG>Operație</STRONG></td>
+                    <td><STRONG>Rezultat</STRONG></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>1234<span style="color : #f73939;">5</span> % 10</td>
+                    <td><span style="color : #f73939;">5</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>33<span style="color : #f73939;">2</span> % 10</td>
+                    <td><span style="color : #f73939;">2</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td>1000<span style="color : #f73939;">0</span> % 10</td>
+                    <td><span style="color : #f73939;">0</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td><span style="color : #f73939;">7</span> % 10</td>
+                    <td><span style="color : #f73939;">7</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td><span style="color : #f73939;">0</span> % 10</td>
+                    <td><span style="color : #f73939;">0</span></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="i">
+            <img src="l4/1.png" width="700">
+        </div><br>
+        
+        <li>Câtul împărțirii la 10</li>
+            <ul>
+                <li><strong>Câtul</strong> împărțirii la 10 indică întotdeauna <u><strong>numărul FĂRĂ ultima cifră</strong></u>.</li>
+            
+            
+            <div class="tabel">
+            <table BORDER="1"> 
+                <tr VALIGN="TOP">
+                    <td><STRONG>Operație</STRONG></td>
+                    <td><STRONG>Rezultat</STRONG></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td><span style="color : #f73939;">1234</span>5 / 10</td>
+                    <td><span style="color : #f73939;">1234</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td><span style="color : #f73939;">33</span>2 / 10</td>
+                    <td><span style="color : #f73939;">33</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td><span style="color : #f73939;">1000</span>0 / 10</td>
+                    <td><span style="color : #f73939;">1000</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td><span style="color : #660202;">0</span>7 / 10</td>
+                    <td><span style="color : #f73939;">0</span></td>
+                </tr>
+                <tr VALIGN="TOP">
+                    <td><span style="color : #f73939;">0</span> / 10</td>
+                    <td><span style="color : #f73939;">0</span></td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="i">
+            <img src="l4/2.png" width="700">
+        </div><br>
+        
+        <li>Dacă numărul conține o singură cifră, atunci câtul împărțirii la 10 va fi 0 (numărul rămâne fără nicio cifră).</li>
+        <li>0 / 10 va fi tot 0</li>
+        </ul>
+        
+        <p>Concluzie:</p>
+        
+        <table>
+        
+        <tr>
+            
+            <td><strong>Operație:</strong></td>
+            <td><strong>Rezultat:</strong></td>
+            
+        </tr>
+        
+        <tr>
+            <td>
+                <pre style="margin: 0px 0px 0px 0px">
+                    <code class="c++" style="margin: 0px 0px 0px 0px">
+c = n % 10;
+                    </code>
+                </pre>
+            </td>
+            <td>
+            => variabila <strong>c</strong> conține ultima cifră a lui <strong>n</strong>
+            <td>
+        </tr>
+        
+        <tr>
+            <td>
+                <pre style="margin: 0px 0px 0px 0px">
+                    <code class="c++" style="margin: 0px 0px 0px 0px">
+n = n / 10;
+                    </code>
+                </pre>
+            </td>
+            <td>
+            => se elimină ultima cifră a lui <strong>n</strong>
+            <td>
+        </tr>
+        </table>
+        
+        <li>Suma cifrelor unui număr</li>
+        <br>
+        <ol type="a">
+            <li>Dacă numărul are o singură cifră, suma acestor “cifre” este trivială</li>
+            <pre style="margin: 0px 0px 0px 0px">
+                    <code class="c++" style="margin: 0px 0px 0px 0px">
+    /*
+    Exemplu:
+    2 -> 2
+    3 -> 3
+    n -> n
+    */
+                    </code>
+                </pre>
+            
+            <li>Dacă numărul are două cifre, suma acestor cifre va fi:</li>
+            <pre style="margin: 0px 0px 0px 0px">
+                    <code class="c++" style="margin: 0px 0px 0px 0px">
+    ultima_cifra + prima_cifră
+                    </code>
+                </pre>
+                
+                <pre>
+            <code class="c++">
+    /*
+    Exemplu:
+    22 -> 2 + 2 = 4
+    36 -> 6 + 3 = 9
+    95 -> 5 + 9 = 14
+    */
+            
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+
+    int main()
+    {
+        int n;
+        int sum = 0;
+        cout << "Introduceți un număr format din două cifre: ";
+        cin >> n;
+        
+        sum = n % 10 + n / 10;
+        cout << "Suma este " << sum;
+    
+        return 0;
+    }
+            </code>
+        </pre>
+        
+        <li>Dacă numărul are 3 cifre, pe același raționament, suma acestora va fi:</li>
+        <pre style="margin: 0px 0px 0px 0px">
+                    <code class="c++" style="margin: 0px 0px 0px 0px">
+    ultima_cifra + a_doua_cifră + prima_cifră
+                    </code>
+                </pre>
+                
+                <pre>
+                    <code class="c++">
+    /*
+    Exemplu:
+    223 -> 2 + 2 + 3 = 7
+    360 -> 6 + 3 + 0 = 9
+    915 -> 5 + 1 + 9 = 15
+    */
+            
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+
+    int main()
+    {
+        int n;
+        int sum = 0;
+        cout << "Introduceți un număr format din trei cifre: ";
+        cin >> n;
+        //    ultima---a_doua_cifră----prima_cifra
+        sum = n % 10 + (n / 10) % 10 + (n / 100);
+        cout << "Suma este " << sum;
+    
+        return 0;
+    }
+            </code>
+        </pre>
+        
+        <li>Cu cât crește numărul de cifre, devine tot mai greu să accesăm cifrele.</li>
+        
+            <ul>
+                <li>Trebuie să găsim o cale pentru a accesa cifrele <strong>indiferent de numărul acestora</strong></li>
+                <li>Soluția este să repetăm grupul de instrucțiuni care:</li>
+                    <ul>
+                        <li><em><strong>extrage</strong> ultima cifră</em></li>
+                        <li><em><strong>elimină</strong> ultima cifră</em></li>
+                    </ul>
+            
+            
+            <p>
+            &emsp;&emsp;&emsp;&emsp;<strong>Citire</strong> n                             <br>
+            &emsp;&emsp;&emsp;&emsp;s <- 0                               <br>
+            &emsp;&emsp;&emsp;&emsp;<strong>Repetă</strong>                               <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;s <- s + (ultima cifră a lui n)  <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;n <- (n fără ultima cifră)       <br>
+            &emsp;&emsp;&emsp;&emsp;<strong>PânăCând</strong> n = 0                       <br>
+            &emsp;&emsp;&emsp;&emsp;<strong>Afișare</strong> s
+            </p>
+            
+            <li>Astfel, parcurgem toate cifrele numărului de la dreapta la stânga, până când acesta rămâne fără cifre (n = 0)</li>
+            
+            </ul>
+        </ol>
+        
+         <pre>
+            <code class="c++">
+    /*
+    Exemplu:
+    22431 -> 1 + 3 + 4 + 2 + 2 = 12
+    */
+            
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+
+    int main()
+    {
+        int n;
+        cout << "Introduceți un număr: ";
+        cin >> n;
+        
+        int sum = 0;
+        
+        while (n != 0){
+            sum = sum + (n % 10);
+            n = n / 10;
+        }
+        
+        cout << "Suma este " << sum;
+    
+        return 0;
+    }
+            </code>
+        </pre>
+        
+        <ul>
+        
+        <li>Tot ce se află între acoladele lui <strong>while</strong> se va repeta <strong>cât timp</strong> condiția din paranteze (n != 0) se îndeplinește</li>
+        <li>La fiecare iterație se verifică acea condiție (n != 0)</li>
+            <ul>
+            <li>dacă ea se îndeplinește, <strong>se continuă</strong> repetiția                       </li>
+            <li>dacă nu se îndeplinește, <strong>se oprește</strong> repetiția și se trece mai departe</li>
+            </ul>
+            
+        <li>Cu alte cuvinte, instrucțiunile din while se repetă:</li>
+            <ul>
+            <li><strong>până când n = 0</strong></li>
+            (sau) 
+            <li><strong>cât timp n != 0</strong></li> 
+            </ul>
+            
+        <li><strong>Cele două exprimări sunt echivalente, diferă condiția (care este <u>negată</u>)</strong></li>
+        
+        <li>În traducere liberă, se actualizează <strong>suma</strong> cu ultima cifră a lui <strong>n</strong> și se elimină ultima cifră a lui <strong>n</strong> cât timp <strong>n</strong> nu este 0</li>
+        </ul>
+        
+        <hr>
+        
+        <li>Aplicații</li>
+        <br>
+        <ol type="a">
+            <li>Afișați toate numerele de la 0 la n, unde n este un număr întreg citit de la tastatură.</li>
+            
+            <pre>
+            <code class="c++">
+    /*
+    Exemplu:
+    12 -> 0 1 2 3 4 5 6 7 8 9 10 11 12
+    */
+            
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+
+    int main()
+    {
+        int n;
+        cout << "Introduceți un număr: ";
+        cin >> n;
+        
+        int i = 0;                 //inițializare cu 0
+        while(i <= n){             //cât timp i <= n:
+            cout << i << endl;          //afișează i (0 1 .... n)
+            i++;                        //treci la următorul i (incrementare)
+        }
+        
+        return 0;
+    }
+            </code>
+        </pre>
+            
+        
+        
+        <li>Afișați toate numerele <strong>pare</strong> de la 0 la n, unde n este un număr întreg citit de la tastatură.</li>
+        
+                    <pre>
+            <code class="c++">
+    /*
+    VARIANTA CU IF
+    Exemplu:
+    12 -> 0 2 4 6 8 10 12
+    */
+            
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+
+    int main()
+    {
+        int n;
+        cout << "Introduceți un număr: ";
+        cin >> n;
+        
+        int i = 0;                  //inițializare cu 0
+        while (i <= n){             //cât timp i <= n:
+            if (i % 2 == 0){            //dacă i este par
+                cout << i << endl;          //afișează i (0 2 .... n)
+            }
+            i++;                        //treci la următorul i (incrementare)
+        }
+        
+        return 0;
+    }
+            </code>
+        </pre>
+        
+        <ul>
+            <li><strong>Varianta 2 (fără if)</strong></li>
+            <li>deoarece numerele pare merg din 2 în 2, este suficient să creștem valoarea variabilei i cu 2 la fiecare pas.</li>
+            <li>i va fi mereu de forma: <br>0 ... 2 ... 4 ... 6 ... ... 2k (k număr natural)</li> 
+        </ul>
+        
+                    <pre>
+            <code class="c++">
+    /*
+    VARIANTA FĂRĂ IF
+    Exemplu:
+    12 -> 0 2 4 6 8 10 12
+    */
+            
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+
+    int main()
+    {
+        int n;
+        cout << "Introduceți un număr: ";
+        cin >> n;
+        
+        int i = 0;                 //inițializare cu 0
+        while(i <= n){             //cât timp i <= n:
+            cout << i << endl;          //afișează i (0 2 .... n)
+            i = i + 2;                  //treci la următorul i (din 2 în 2)
+        }
+        
+        return 0;
+    }
+            </code>
+        </pre>
+        
+        
+        <li>Calculează suma cifrelor pare ale unui număr n citit de la tastatură.</li>
+        
+        <pre>
+            <code class="c++">
+    /*
+    Exemplu:
+    1234567 -> 6 + 4 + 2 = 12
+    */
+            
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+
+    int main()
+    {
+        int n;
+        cout << "Introduceți un număr: ";
+        cin >> n;
+        
+        int suma = 0;
+        while (n > 0){          //cât timp n mai are cifre ( n > 0 e la fel cu n != 0 )
+            int c = n % 10;         //se extrage ultima cifră în variabilă
+            if (c % 2 == 0){        //dacă cifra e pară
+                s = s + c;                  //actualizăm suma
+            }
+            n = n / 10;             //eliminăm ultima cifră
+        }
+    
+        cout << "Suma este: " << suma;
+        
+        return 0;
+    }
+            </code>
+        </pre>
+        
+        <li>Calculează suma cifrelor impare ale unui număr n citit de la tastatură.</li>
+        <li>Determină numărul de cifre ale lui <strong>n</strong> egale cu o cifră <strong>c</strong> dată.</li>
+        
+        <p>
+        Exemplu:
+        </p>
+        
+
+        <pre>
+            
+    n = 12<span style="color : #f73939;">44</span>7<span style="color : #f73939;">4</span>, c = <span style="color : #f73939;">4</span> -> 3
+    n = 1<span style="color : #f73939;">2</span>444,  c = <span style="color : #f73939;">2</span> -> 1
+    n = 12,     c = <span style="color : #f73939;">3</span> -> 0 (cifra <span style="color : #f73939;">3</span> nu apare niciunde în număr)
+            
+        </pre>
+        
+        <pre>
+            <code class="c++">
+            
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+
+    int main(){
+        
+        int n;
+        int c;
+        cout << "Introduceți un număr: ";
+        cin >> n;
+        cout << "Introduceți o cifră: ";
+        cin >> c;
+        
+        int contor = 0; //contorul ne arată câte cifre egale cu c am găsit în număr
+            
+        while (n != 0){
+            int cifra = n % 10;     //extrage ultima cifră
+            if (cifra == c){        //dacă ultima cifră este egală cu cifra dată
+                contor++;               //incrementăm contorul
+            }
+            n = n / 10;             //eliminăm ultima cifră
+        }
+        
+        cout << "Numărul de cifre " 
+             << c << " din numărul introdus este: " 
+             << contor << endl;
+        return 0;        
+    }
+            </code>
+        </pre>
+        </ol>
+    </ol>
 </body>
 
 </html>
