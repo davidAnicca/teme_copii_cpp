@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>CPP Tema 1</title>
+<link rel="icon" href="../icon.ico">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../h/styles/github-dark.min.css">
+<script src="../h/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+
+<a href="../index.html">&lt&lt Home</a>
+<p>Înainte de a face tema, consultați <a href="../lectii/l5.html">lecția</a> pentru inspirație.</p>
+<hr>
+<h1>Tema A</h1>
+    <ul>
+        <li>Ridicarea la putere a unui număr se definește astfel:</li><br><br>
+        <div class="i">
+            <img src="./t5/1.png" width="700">
+        </div>
+        <pre>
+    Exemplu:
+    3<sup>2</sup> = 3 * 3 = 9
+    7<sup>4</sup> = 7 * 7 * 7 * 7 = 2401
+    1<sup>2023</sup> = 1 * 1 * ... * 1 = 1
+    4<sup>0</sup> = 1 &#129327;
+    &lambda;<sup>0</sup> = 1, (&forall;)&lambda; &isin; &real;
+        (prin convenție orice număr ridicat la puterea 0 este 1)
+        </pre>
+    
+        <li>Scrieți un program care primește un număr <strong>n</strong> și un număr <strong>k</strong> și care calculează valoarea lui n<sup>k</sup>.
+        <li>Datele de intrare trebuie să respecte următoarele restricții:</li>
+        <pre>
+    n &ge; 0
+    k &ge; 1
+        </pre>
+    </ul>
+
+<hr>
+<h1>Tema B</h1>
+    <ul>
+        <li>Pentru a genera un număr random în c++ este nevoie să importăm următoarele două biblioteci:</li>
+        
+        <pre>
+            <code class="c++">
+    #include &lt;cstdlib&gt;
+    #include &lt;time.h&gt;
+            </code>
+        </pre>
+        
+        <li>Instrucțiunea "***" trebuie introdusă la începutul codului pentru a genera la fiecare rulare alte numere, astfel:</li>
+        
+        <pre>
+            <code class="c++">
+    #include &lt;iostream&gt;       
+    #include &lt;cstdlib&gt;
+    #include &lt;time.h&gt;
+    using namespace std;
+    
+    int main()
+    {
+        srand((unsigned) time(NULL));  //***
+        
+        //restul codului...
+        
+        return 0;
+    }    
+            </code>
+        </pre>
+        
+        <li>Pentru a afișa un număr random, folosim instrucțiunea rand()</li>
+        <pre>
+            <code class="c++">
+    cout << rand() << endl;
+            </code>
+        </pre>
+        
+        <li>Scrieți un program care citește de la tastatură un număr <strong>n</strong>.</li>
+        <li>Programul apoi afișează un tabel (o matrice) cu <strong>n</strong> linii și <strong>n</strong> coloane, aflându-se pe fiecare poziție valori de 0 sau de 1 în mod aleatoriu (random)</li>
+        <li>La fiecare rulare a programului se cere să se afișeze o cu totul <strong>altă variantă</strong> de aranjare.</li>
+        
+        <pre>
+            <code class="c++">
+    Exemplu:
+    n = 5 (rulare 1)
+    10111
+    11010
+    10010
+    10011
+    01110
+    
+    n = 5 (rulare 2)
+    
+    00100
+    01100
+    11101
+    01000
+    10011
+            </code>
+        </pre>
+        
+        <li>Restul împărțirii la 2 poate fi doar 0 sau 1, astfel, dacă afișăm restul împărțirii la 2 a valorii returnate de rand(), vom obține doar valori de 0 sau 1.</li>
+        
+                <pre>
+            <code class="c++">
+    cout << rand() % 2;
+            </code>
+        </pre>
+        
+    </ul>
+    
+    <hr>
+    <p>Timp de lucru: 1 săptămână</p>
+    <a href="compiler.html">Compilator online</a>
+</body>
+
+</html>
