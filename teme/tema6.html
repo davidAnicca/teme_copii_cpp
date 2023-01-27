@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>CPP Tema 1</title>
+<link rel="icon" href="../icon.ico">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../h/styles/github-dark.min.css">
+<script src="../h/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+
+<a href="../index.html">&lt&lt Home</a>
+<p>Înainte de a face tema, consultați <a href="../lectii/l6.html">lecția</a> pentru inspirație.</p>
+<hr>
+<h1>Tema A</h1>
+
+<ul>
+    <li>Dublu factorial (sau semifactorial) se notează cu n!!</li>
+    <li>El reprezintă produsul tuturor numerelor naturale pozitive mai mici sau egale decât n, dar care au aceeași paritate cu n.</li>
+    <li>Exemplu: 5!! = 1 * 3 * 5 = 15
+    <br>Exemplu: 6!! = 2 * 4 * 6 = 48
+    
+    <li>Scrieți un program care calculează n!! pentru un număr n citit de la tastatură (folosiți unsigned long long).</li>
+</ul>
+
+<hr>
+
+<h1>Tema B</h1>
+<ul>
+    <li>În cultura chineză numărul 4 este ghinionist deoarece pronunția acestuia sună ca și cuvântul "moarte".</li>
+    
+    <li>Scrieți un program care citește numere la infinit până când se citește un număr multiplu de 4 (4, 8, 12 ...).</li>
+    <li>Un număr n este multiplu de 4 dacă n % 4 == 0.</li>
+</ul>
+
+<h1>Tema C</h1>
+<ul>
+    <li>Scrieți un <em>virus</em> care închide calculatorul după 44 de secunde</li>
+    <li>Pentru a opri execuția programului pentru o secundă, se poate folosi instrucțiunea sleep(1);</li>
+    
+    <pre>
+        <code class="c++">
+        #include &lt;windows.h&gt;
+        using namespace std;
+
+        int main(){
+            //while ...
+                sleep(1);  //stă o secundă apoi merge mai departe
+            
+            return 0;
+        }
+            
+        </code>
+    </pre>
+    
+    <li><strong>După fiecare secundă programul trebuie să afișeze secundele rămase.</strong></li>
+    <li>Calculatorul poate fi oprit rulând o comandă de system (Windows) direct din programul nostru:</li>
+    
+    <pre>
+        <code class="c++">
+        system("shutdown /s -t 0");
+        </code>
+    </pre>
+    
+</ul>
+
+
+    <hr>
+    <p>Timp de lucru: 1 săptămână</p>
+    <a href="compiler.html">Compilator online</a>
+</body>
+
+</html>

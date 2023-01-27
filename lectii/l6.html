@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>CPP Tema 1</title>
+<link rel="icon" href="../icon.ico">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="../h/styles/github-dark.min.css">
+<script src="../h/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+</head>
+
+<body>
+<a href="../index.html">&lt;&lt; Home</a>
+<hr>
+    <h2>Aplicații cu structura <strong>while</strong></h2>
+    
+    <ol>
+        <li>Construcția unui număr</li>
+        <ul>
+            <li>Pentru a adăuga o cifră la un număr <strong>n</strong> trebuie să îl înmulțim cu 10 și apoi să adunăm cifra</li>
+            
+            <pre>
+                <code class="c++">
+    Exemplu:
+    n = 345; //numărul
+    c = 4;    //cifra
+    n = n * 10; //n <- 3450
+    n = n + c;  //n <- 3450 + 4 = 3454
+                </code>
+            </pre>
+            
+        </ul>
+    
+    <li>Să se verifice dacă un număr este palindrom</li>
+    
+        <ul>
+            <li>Copiem numărul într-o altă variabilă <strong>copie</strong></li>
+            <li>Luăm toate cifrele din copie și le adăugăm la un număr nou (care începe de la 0)</li>
+            <li>Numărul respectiv va fi chiar inversul numărului</li>
+            
+            <pre>
+        <code class="c++">
+    /*
+    Exemplu:
+    n = 345 //numărul
+    copie = 345 
+    invers = 0
+    
+    invers = 5, copie = 34
+    invers = 54, copie = 3
+    invers = 543, copie = 0
+    
+    invers reprezintă inversul lui n
+    */
+    
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+    
+    int main()
+    {
+        int n;
+        cout << "introduceti nr: ";
+        cin >> n;
+    
+        int copie = n; //facem o copie
+        int invers = 0; //inversul numarului
+        
+        //construim inversul:
+        while (copie > 0){
+            int c = copie % 10;  //ultima cifră din copie
+            invers = invers * 10; //facem loc pt cifră în dreapta
+            invers = invers + c; //adăugăm cifra în dreapta
+            
+            copie = copie / 10; //eliminăm ultima cifră
+        }
+        
+        if (n == invers){        //am făcut copie pentru a nu pierde valoarea lui n
+            cout << "DA";
+        }else{
+            cout << "NU";
+        }
+        return 0;
+    }
+    
+                </code>
+            </pre>
+            
+        </ul>
+    
+    <li>Media școlară</li>
+    
+    <ul>
+        <li>Media a k numere naturale se face astfel: </li>
+            <pre>
+            s/k, unde s este suma numerelor
+            </pre>
+        <li>În c++ numerele cu virgulă se pot reține în variabile de tip <strong>float</strong>.
+        </li>
+        
+        <li>Să se scrie un program care tot citește note de la tastatură până când se introduce numărul 0.</li>
+        <li>Programul va calcula media notelor introduse.</li>
+        <br>
+        <li>Pentru rezolvare, facem suma tuturor numerelor introduse și numărăm câte s-au citit într-o variabilă k.</li>
+        <li>La final împărțim suma la k.</li>
+        <li>Pentru a avea notă cu virgulă, folosim suma ca float.</li>
+        <li>Din citire ne oprim dacă s-a citit 0 de la tastatură.</li>
+        
+        <br>
+        
+        <li>Exemplu: 5 6 10 10 10 0 -> 5+6+10+10+10/5 = 8.2</li> 
+        
+                    <pre>
+        <code class="c++">
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+    
+    int main()
+    {
+        int n;
+        int k = 0;      //numărul de note introduse
+        float sum = 0;  //suma numerelor
+    
+        cout << "introducei nota>>";     //citim prima notă
+        cin >> n;
+        while(n != 0){          //citim până când e 0
+            k++;
+            sum = sum + n;
+    
+            cout << "introducei nota>>";
+            cin >> n;                      //citim următoarele note
+        }
+    
+        cout << "media este: " << sum / k;   ///afișăm media
+    
+        return 0;
+    }
+                </code>
+            </pre>
+        
+    </ul>   
+    
+    <li>
+        Factorial
+    </li>
+    
+    <ul>
+        <li>Factorialul unui număr este valoarea care se obține astfel:</li>
+        <pre>
+    n! = 1 * 2 * 3 * 4 * 5 * 6 * ... * n
+        </pre>
+        <li>În matematică se notează cu ! (nu are legătură cu notația din c++)
+        </li>
+        <li>Exemplu: 3! = 1 * 2 * 3 = 6<br>
+            Exemplu: 7! = 1 * 2 * 3 * 4 * 5 * 6 * 7 = 5040<br>
+            Exemplu: 12! = 1 * 2 * ... * 12 = 479001600</li><br>
+        
+        <li>Nefiind o operație comodă făcută pe hârtie, se cere să se scrie un program care calculează factorialul unui număr</li>
+        <li>Folosim tipul de date <strong>unsigned long long</strong> pentru rezultat (fiind un număr mare)</li>
+        <li>Unsigned înseamnă că variabila nu reține numere negative, deci avem mai mult loc pentru factorialul nostru</li>
+    </ul>
+    
+    <pre>
+        <code class="c++">
+    #include &lt;iostream&gt;
+    
+    using namespace std;
+    
+    int main()
+    {
+        int n;
+        cout << "scrieti nr>>";
+        cin >> n;
+    
+        unsigned long long factorial = 1;  //factorialul
+    
+        int i = 1; //numărul cu care înmulțim (1->n)
+        while (i <= n){
+            factorial = factorial * i;
+    
+            i++; //trecem la următorul număr
+        }
+    
+        cout << n << "! = "<< factorial;        
+    }
+                </code>
+            </pre>
+    
+    </ol>
+    
+    
+    <hr>
+    <a href="../teme/tema6.html">Tema</a>
+</body>
+
+</html>
